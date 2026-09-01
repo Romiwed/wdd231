@@ -1,0 +1,38 @@
+@media screen and (min-width: 700px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  #nav-menu {
+    display: block;
+  }
+
+  #nav-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nav-menu li {
+    flex: 1;
+    max-width: 200px;
+  }
+
+  #nav-menu a {
+    width: 100%;
+  }
+
+  .top-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .filter-buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #course-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

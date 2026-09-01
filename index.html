@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="WDD 231 course home page for Romina De Santis Cruz."
+  >
+  <meta name="author" content="Romina De Santis Cruz">
+
+  <title>WDD 231 | Romina De Santis Cruz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+  <script src="scripts/date.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 231</h1>
+
+  <header>
+    <img src="images/logo.svg" alt="Site logo" width="1" height="1">
+    <span>Romina De Santis Cruz</span>
+    <button
+      id="nav-button"
+      class="hamburger"
+      aria-label="Open navigation menu"
+    ></button>
+  </header>
+
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="top-grid">
+
+      <section>
+        <h2>About Me</h2>
+
+        <p>
+          Hello! My name is Romina De Santis Cruz. I am from Ecuador
+          and I am currently studying Software Development through
+          BYU-Idaho. I enjoy learning about programming, technology,
+          and web development.
+        </p>
+      </section>
+
+      <section class="photo-section">
+        <h2>Student Photo</h2>
+
+        <img
+          src="images/profile-photo.jpeg"
+          alt="Romina De Santis Cruz"
+          width="200"
+          height="267"
+        >
+      </section>
+
+    </div>
+
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filter-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+
+      <p class="credits">
+        The total number of credits listed below is
+        <span id="total-credits">0</span>
+      </p>
+
+      <div id="course-list"></div>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="social-links">
+      <a href="https://github.com/" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+
+    <p>
+      &copy; <span id="currentyear"></span>
+      Romina De Santis Cruz | Ecuador
+    </p>
+
+    <p id="lastModified"></p>
+
+  </footer>
+
 </body>
 </html>
