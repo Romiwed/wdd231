@@ -1,0 +1,28 @@
+{
+    "family_name": "Garcia",
+    "move_in_date": "2026-08-15",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Carlos Garcia",
+            "gender": "Male",
+            "birthdate": "1988-04-12"
+        },
+        {
+            "name": "Elena Garcia",
+            "gender": "Female",
+            "birthdate": "1990-09-23"
+        },
+        {
+            "name": "Sofia Garcia",
+            "gender": "Female",
+            "birthdate": "2014-02-10"
+        },
+        {
+            "name": "Daniel Garcia",
+            "gender": "Male",
+            "birthdate": "2017-07-05"
+        }
+    ]
+}
