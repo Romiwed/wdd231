@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Sunrise Hotel",
+      "address": "123 Main Street",
+      "phone": "555-123-4567",
+      "website": "https://example.com",
+      "image": "hotel.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Golden Fork Restaurant",
+      "address": "45 Central Avenue",
+      "phone": "555-234-5678",
+      "website": "https://example.com",
+      "image": "restaurant.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Sweet Bread Bakery",
+      "address": "78 Market Street",
+      "phone": "555-345-6789",
+      "website": "https://example.com",
+      "image": "bakery.jpg",
+      "membership": 1
+    },
+    {
+      "name": "Healthy Life Pharmacy",
+      "address": "15 Oak Road",
+      "phone": "555-456-7890",
+      "website": "https://example.com",
+      "image": "pharmacy.jpg",
+      "membership": 2
+    },
+    {
+      "name": "Community Bank",
+      "address": "200 Finance Street",
+      "phone": "555-567-8901",
+      "website": "https://example.com",
+      "image": "bank.jpg",
+      "membership": 3
+    },
+    {
+      "name": "Fresh Market",
+      "address": "89 Green Avenue",
+      "phone": "555-678-9012",
+      "website": "https://example.com",
+      "image": "market.jpg",
+      "membership": 1
+    },
+    {
+      "name": "NextGen Technology",
+      "address": "310 Innovation Drive",
+      "phone": "555-789-0123",
+      "website": "https://example.com",
+      "image": "technology.jpg",
+      "membership": 3
+    }
+  ]
+}

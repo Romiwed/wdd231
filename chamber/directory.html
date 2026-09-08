@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chamber of Commerce Directory | Romina De Santis Cruz</title>
+
+  <meta name="description" content="Explore local businesses and members in the Chamber of Commerce directory.">
+  <meta name="author" content="Romina De Santis Cruz">
+
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:description" content="Discover local businesses and Chamber of Commerce members.">
+  <meta property="og:image" content="https://romiwed.github.io/wdd231/chamber/images/hotel.jpg">
+  <meta property="og:url" content="https://romiwed.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+
+      <div class="site-brand">
+        <div class="logo">CC</div>
+
+        <div>
+          <span class="site-name">Chamber of Commerce</span>
+          <span class="site-tagline">Supporting Local Business</span>
+        </div>
+      </div>
+
+      <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="navigation">
+        <a href="../index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Discover</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <h1>Business Directory</h1>
+
+    <p class="intro">
+      Discover businesses and organizations that are members of our local
+      Chamber of Commerce.
+    </p>
+
+    <div class="view-buttons">
+      <button id="grid" type="button" aria-label="Display members in grid view">
+        ▦ Grid
+      </button>
+
+      <button id="list" type="button" aria-label="Display members in list view">
+        ☷ List
+      </button>
+    </div>
+
+    <section id="members" class="grid" aria-label="Chamber members"></section>
+
+  </main>
+
+  <footer>
+
+    <div class="footer-contact">
+      <p><strong>Chamber of Commerce</strong></p>
+      <p>Local Business Community</p>
+      <p>Email: info@chamber.com</p>
+      <p>Phone: 555-123-4567</p>
+    </div>
+
+    <div class="footer-project">
+      <p>WDD 231 Class Project</p>
+      <p>Romina De Santis Cruz</p>
+      <p>
+        &copy; <span id="currentyear"></span>
+        Chamber of Commerce
+      </p>
+      <p>
+        Last Modification:
+        <span id="lastModified"></span>
+      </p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

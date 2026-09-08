@@ -1,0 +1,55 @@
+@media screen and (min-width: 700px) {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  #navigation a {
+    padding: 1rem;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #members.list .member-information {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #members.list .member-information h2,
+  #members.list .member-information p,
+  #members.list .member-information a {
+    margin: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .footer-project {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
