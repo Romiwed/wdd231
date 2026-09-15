@@ -1,22 +1,24 @@
+console.log("DIRECTORY JS FUNCIONA");
+
 const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector("#navigation");
-
 async function getMembers() {
   try {
-    const response = await fetch("./data/members.json");
+    const response = await fetch("data/members.json");
 
     if (!response.ok) {
-      throw new Error("Unable to load member data.");
+      throw new Error(`HTTP error: ${response.status}`);
     }
 
     const data = await response.json();
+
+    console.log("MEMBERS CARGADOS:", data.members);
+
     displayMembers(data.members);
   } catch (error) {
-    console.error("Error loading members:", error);
+    console.error("ERROR CARGANDO MEMBERS:", error);
 
     membersContainer.innerHTML =
       "<p>Member information is currently unavailable.</p>";
@@ -40,13 +42,15 @@ function displayMembers(members) {
 
   members.forEach((member) => {
     const card = document.createElement("article");
+
     card.classList.add("member-card");
 
-    const membershipLevel = getMembershipLevel(member.membership);
+    const membershipLevel =
+      getMembershipLevel(member.membership);
 
     card.innerHTML = `
       <img
-        src="./images/${member.image}"
+        src="images/${member.image}"
         alt="${member.name}"
         width="400"
         height="250"
@@ -54,9 +58,13 @@ function displayMembers(members) {
       >
 
       <div class="member-information">
+
         <h2>${member.name}</h2>
+
         <p>${member.address}</p>
+
         <p>${member.phone}</p>
+
         <p>${membershipLevel}</p>
 
         <a
@@ -66,6 +74,7 @@ function displayMembers(members) {
         >
           Visit Website
         </a>
+
       </div>
     `;
 
@@ -81,10 +90,6 @@ gridButton.addEventListener("click", () => {
 listButton.addEventListener("click", () => {
   membersContainer.classList.add("list");
   membersContainer.classList.remove("grid");
-});
-
-menuButton.addEventListener("click", () => {
-  navigation.classList.toggle("open");
 });
 
 getMembers();

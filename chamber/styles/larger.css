@@ -1,55 +1,62 @@
-@media screen and (min-width: 700px) {
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+@media screen and (min-width: 768px) {
 
-  #menu {
-    display: none;
-  }
+    /* HEADER */
 
-  #navigation {
-    display: flex;
-    flex-direction: row;
-    margin-top: 0;
-  }
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-  #navigation a {
-    padding: 1rem;
-  }
+    #menu {
+        display: none;
+    }
 
-  #members.grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
 
-  #members.list .member-information {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1.5fr 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-  }
+    #navigation a {
+        padding: 1rem 1.25rem;
+    }
 
-  #members.list .member-information h2,
-  #members.list .member-information p,
-  #members.list .member-information a {
-    margin: 0;
-  }
+    /* HERO */
 
-  footer {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    text-align: left;
-  }
+    .hero img {
+        height: 420px;
+    }
 
-  .footer-project {
-    margin-top: 0;
-  }
-}
+    /* EVENTS + WEATHER */
 
-@media screen and (min-width: 1000px) {
-  #members.grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* SPOTLIGHTS */
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* DIRECTORY */
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .footer-contact,
+    .footer-project {
+        width: 50%;
+        margin: 0;
+    }
 }

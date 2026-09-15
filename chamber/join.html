@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Chamber of Commerce home page with local events, weather, and featured businesses.">
+    <meta name="author" content="Romina De Santis Cruz">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description"
+        content="Discover local businesses, events, weather, and opportunities in our community.">
+    <meta property="og:image" content="https://romiwed.github.io/wdd231/chamber/images/hotel.jpg">
+    <meta property="og:url" content="https://romiwed.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div class="site-brand">
+                <div class="logo">CC</div>
+
+                <div>
+                    <span class="site-name">Chamber of Commerce</span>
+                    <span class="site-tagline">Supporting Local Business</span>
+                </div>
+            </div>
+
+            <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <!-- Temporary image.
+                 Later we can replace this with hero.webp -->
+            <img src="images/hotel.jpg" alt="Local business community" width="1200" height="600">
+
+            <a href="#" class="cta">Join the Chamber</a>
+
+        </section>
+
+        <h1>Chamber of Commerce</h1>
+
+        <!-- EVENTS AND WEATHER -->
+        <div class="home-grid">
+
+            <section class="events">
+
+                <h2>Current Events</h2>
+
+                <div class="event-card">
+                    <h3>Community Business Meeting</h3>
+
+                    <p>
+                        Meet local business owners and discover new
+                        opportunities in our community.
+                    </p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Local Business Fair</h3>
+
+                    <p>
+                        Join us for networking, local products,
+                        food, and community activities.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="weather">
+
+                <h2>Weather</h2>
+
+                <div class="current-weather">
+
+                    <img id="weather-icon" src="images/hotel.jpg" alt="Weather icon">
+
+                    <div>
+                        <p>
+                            <strong>
+                                <span id="current-temp">--</span>°C
+                            </strong>
+                        </p>
+
+                        <p id="weather-description">
+                            Loading weather...
+                        </p>
+                    </div>
+
+                </div>
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast">
+                    <p>Loading forecast...</p>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- COMPANY SPOTLIGHTS -->
+        <section class="spotlights-section">
+
+            <h2>Company Spotlights</h2>
+
+            <div id="spotlights" class="spotlights">
+                <!-- JavaScript will insert the businesses here -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-contact">
+
+            <p>
+                <strong>Chamber of Commerce</strong>
+            </p>
+
+            <p>Local Business Community</p>
+
+            <p>Email: info@chamber.com</p>
+
+            <p>Phone: 555-123-4567</p>
+
+        </div>
+
+
+        <div class="footer-project">
+
+            <p>WDD 231 Class Project</p>
+
+            <p>Romina De Santis Cruz</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Chamber of Commerce
+            </p>
+
+            <p>
+                Last Modification:
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
