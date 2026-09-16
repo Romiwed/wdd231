@@ -13,7 +13,7 @@
       "address": "45 Central Avenue",
       "phone": "555-234-5678",
       "website": "https://example.com",
-      "image": "restaurant.jpg",
+      "image": "restaurant.webp",
       "membership": 2
     },
     {
@@ -21,7 +21,7 @@
       "address": "78 Market Street",
       "phone": "555-345-6789",
       "website": "https://example.com",
-      "image": "bakery.jpg",
+      "image": "bakery.webp",
       "membership": 1
     },
     {
@@ -29,7 +29,7 @@
       "address": "15 Oak Road",
       "phone": "555-456-7890",
       "website": "https://example.com",
-      "image": "pharmacy.jpg",
+      "image": "pharmacy.webp",
       "membership": 2
     },
     {
@@ -37,7 +37,7 @@
       "address": "200 Finance Street",
       "phone": "555-567-8901",
       "website": "https://example.com",
-      "image": "bank.jpg",
+      "image": "bank.webp",
       "membership": 3
     },
     {
@@ -45,7 +45,7 @@
       "address": "89 Green Avenue",
       "phone": "555-678-9012",
       "website": "https://example.com",
-      "image": "market.jpg",
+      "image": "market.webp",
       "membership": 1
     },
     {
@@ -53,7 +53,7 @@
       "address": "310 Innovation Drive",
       "phone": "555-789-0123",
       "website": "https://example.com",
-      "image": "technology.jpg",
+      "image": "technology.webp",
       "membership": 3
     }
   ]
