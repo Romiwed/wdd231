@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+#loader,
+.loader-t {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+/* Activity 1 - Animation */
+
+#loader {
+    animation: spin 1.5s linear infinite;
+}
+
+#loader::after {
+    content: "⚙️";
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Activity 2 - Transition */
+
+.loader-t {
+    transition:
+        transform 1.5s ease-in-out,
+        box-shadow 1.5s ease-in-out;
+}
+
+.loader-t:hover {
+    transform: rotate(360deg) scale(1.25);
+    box-shadow: 0 0 2rem rgb(0 0 255 / 70%);
+}
