@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced HTML form practice for WDD 231.">
+    <meta name="author" content="Romina De Santis Cruz">
+
+    <title>Advanced HTML Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <main>
+        <h1>Student Information Form</h1>
+
+        <form method="get" action="form-response.html">
+
+            <label>
+                First Name
+                <input type="text" name="firstName" required>
+            </label>
+
+            <label>
+                Last Name
+                <input type="text" name="lastName" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Study Program
+                <select name="program" required>
+                    <option value="">Select a program</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                </select>
+            </label>
+
+            <label>
+                Start Date
+                <input type="date" name="startDate">
+            </label>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+
+</html>
