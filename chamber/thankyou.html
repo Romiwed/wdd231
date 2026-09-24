@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | Chamber of Commerce</title>
+
+    <meta name="description" content="Thank you for submitting your Chamber of Commerce membership application.">
+    <meta name="author" content="Romina De Santis Cruz">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div class="site-brand">
+                <div class="logo">CC</div>
+
+                <div>
+                    <span class="site-name">Chamber of Commerce</span>
+                    <span class="site-tagline">Supporting Local Business</span>
+                </div>
+            </div>
+
+            <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <h1>Thank You for Joining</h1>
+
+        <section class="thankyou-card">
+            <h2>Membership Application Received</h2>
+
+            <p>
+                Thank you for your interest in joining our Chamber of Commerce.
+                We have successfully received your membership application.
+            </p>
+
+            <div id="submitted-info">
+
+                <p>
+                    <strong>First Name:</strong>
+                    <span id="submitted-first-name"></span>
+                </p>
+
+                <p>
+                    <strong>Last Name:</strong>
+                    <span id="submitted-last-name"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="submitted-email"></span>
+                </p>
+
+                <p>
+                    <strong>Mobile Phone:</strong>
+                    <span id="submitted-phone"></span>
+                </p>
+
+                <p>
+                    <strong>Business / Organization:</strong>
+                    <span id="submitted-organization"></span>
+                </p>
+
+                <p>
+                    <strong>Form Loaded:</strong>
+                    <span id="submitted-timestamp"></span>
+                </p>
+
+            </div>
+
+            <p>
+                <a href="index.html">Return to Home</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+            <p><strong>Chamber of Commerce</strong></p>
+            <p>Local Business Community</p>
+            <p>Email: info@chamber.com</p>
+            <p>Phone: 555-123-4567</p>
+        </div>
+
+        <div class="footer-project">
+            <p>WDD 231 Class Project</p>
+            <p>Romina De Santis Cruz</p>
+
+            <p>
+                &copy;
+                <span id="currentyear"></span>
+                Chamber of Commerce
+            </p>
+
+            <p>
+                <span id="lastModified"></span>
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
