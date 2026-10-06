@@ -1,0 +1,358 @@
+/* ========================================
+   STUDY SMART PLANNER
+   Resources Page
+   ======================================== */
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.resources-hero {
+    padding: 3.5rem 1rem;
+    background:
+        linear-gradient(135deg,
+            var(--secondary) 0%,
+            var(--background) 100%);
+}
+
+.resources-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resources-hero h1 {
+    margin: 0 0 1rem;
+    color: var(--primary);
+    font-size: clamp(2rem, 8vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.resources-hero-content>p:not(.eyebrow) {
+    max-width: 680px;
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+
+/* =========================
+   MAIN RESOURCES SECTION
+   ========================= */
+
+.resources-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 1rem;
+}
+
+
+/* =========================
+   SEARCH + FILTER
+   ========================= */
+
+.resource-controls {
+    display: grid;
+    gap: 1rem;
+    margin: 2rem auto 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.resource-controls>div {
+    display: grid;
+    gap: 0.4rem;
+}
+
+.resource-controls label {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.resource-controls input,
+.resource-controls select {
+    width: 100%;
+    min-height: 46px;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    background-color: var(--surface);
+}
+
+.resource-controls input::placeholder {
+    color: var(--muted);
+}
+
+.resource-controls input:focus,
+.resource-controls select:focus {
+    border-color: var(--primary);
+    outline: 3px solid rgba(31, 58, 95, 0.15);
+}
+
+.resource-status {
+    margin: 1.5rem 0;
+    color: var(--muted);
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* =========================
+   RESOURCE CARDS
+   ========================= */
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.resource-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.resource-category {
+    align-self: flex-start;
+    margin: 0 0 0.8rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    color: var(--primary);
+    background-color: var(--secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.resource-card h3 {
+    margin: 0 0 0.65rem;
+    color: var(--primary);
+    font-size: 1.3rem;
+    line-height: 1.25;
+}
+
+.resource-card>p:not(.resource-category) {
+    margin: 0 0 1rem;
+    color: var(--muted);
+}
+
+.resource-meta {
+    display: grid;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.resource-meta strong {
+    color: var(--text);
+}
+
+.resource-details-button {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: var(--surface);
+    background-color: var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.resource-details-button:hover,
+.resource-details-button:focus-visible {
+    border-color: var(--primary-dark);
+    background-color: var(--primary-dark);
+}
+
+
+/* =========================
+   EMPTY RESULT MESSAGE
+   ========================= */
+
+.resource-grid>p {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--muted);
+    background-color: var(--surface);
+    text-align: center;
+}
+
+
+/* =========================
+   MODAL
+   ========================= */
+
+.resource-modal {
+    width: min(92%, 620px);
+    max-height: 85vh;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius);
+    color: var(--text);
+    background-color: var(--surface);
+    box-shadow: 0 20px 60px rgba(31, 41, 51, 0.3);
+}
+
+.resource-modal::backdrop {
+    background-color: rgba(15, 23, 42, 0.65);
+}
+
+.modal-content {
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: var(--primary);
+    background-color: var(--secondary);
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+    color: var(--surface);
+    background-color: var(--primary);
+}
+
+#modal-category {
+    margin-right: 3rem;
+}
+
+.resource-modal h2 {
+    margin: 0 3rem 1.25rem 0;
+    color: var(--primary);
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+.modal-details {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.modal-details>p {
+    margin: 0;
+}
+
+.modal-tip {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    background-color: var(--secondary);
+}
+
+.modal-tip h3 {
+    margin: 0 0 0.4rem;
+    color: var(--primary);
+}
+
+.modal-tip p {
+    margin: 0;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (min-width: 641px) {
+
+    .resources-hero {
+        padding: 4.5rem 1.5rem;
+    }
+
+    .resources-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .resource-controls {
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+        padding: 1.5rem;
+    }
+
+    .resource-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .modal-content {
+        padding: 2.25rem;
+    }
+}
+
+
+/* =========================
+   DESKTOP
+   ========================= */
+
+@media screen and (min-width: 900px) {
+
+    .resources-hero {
+        padding: 5rem 2rem;
+    }
+
+    .resources-section {
+        padding: 4.5rem 2rem;
+    }
+
+    .resource-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .resource-card {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    .resource-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 9px 24px rgba(31, 58, 95, 0.15);
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .resource-card {
+        transition: none;
+    }
+
+    .resource-card:hover {
+        transform: none;
+    }
+}

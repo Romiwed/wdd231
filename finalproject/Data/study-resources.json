@@ -1,0 +1,122 @@
+[
+    {
+        "title": "Pomodoro Technique",
+        "category": "Focus",
+        "difficulty": "Easy",
+        "time": "25 minutes",
+        "description": "Study for 25 minutes with full focus, then take a short break before starting another session.",
+        "tip": "Remove distractions before starting the timer and focus on only one task."
+    },
+    {
+        "title": "Distraction-Free Study",
+        "category": "Focus",
+        "difficulty": "Easy",
+        "time": "30 minutes",
+        "description": "Create a quiet study environment by turning off notifications and removing unnecessary distractions.",
+        "tip": "Put your phone on silent or leave it in another room while studying."
+    },
+    {
+        "title": "Single Task Focus",
+        "category": "Focus",
+        "difficulty": "Easy",
+        "time": "20 minutes",
+        "description": "Work on one assignment or topic at a time instead of switching between several tasks.",
+        "tip": "Write down your most important task and finish it before moving to another one."
+    },
+    {
+        "title": "Active Recall",
+        "category": "Memory",
+        "difficulty": "Medium",
+        "time": "20 minutes",
+        "description": "Practice remembering information without looking at your notes or textbook.",
+        "tip": "Close your notes and explain the topic in your own words."
+    },
+    {
+        "title": "Spaced Repetition",
+        "category": "Memory",
+        "difficulty": "Medium",
+        "time": "15 minutes",
+        "description": "Review information several times over a period of days instead of studying everything at once.",
+        "tip": "Review difficult information more often and familiar information less often."
+    },
+    {
+        "title": "Flashcard Review",
+        "category": "Memory",
+        "difficulty": "Easy",
+        "time": "15 minutes",
+        "description": "Use flashcards to practice important terms, definitions, formulas, and concepts.",
+        "tip": "Try answering each card before turning it over to check the answer."
+    },
+    {
+        "title": "Weekly Study Plan",
+        "category": "Organization",
+        "difficulty": "Easy",
+        "time": "15 minutes",
+        "description": "Create a weekly schedule that includes assignments, study sessions, and important deadlines.",
+        "tip": "Plan your most difficult subjects during times when you usually have the most energy."
+    },
+    {
+        "title": "Priority List",
+        "category": "Organization",
+        "difficulty": "Easy",
+        "time": "10 minutes",
+        "description": "Organize school tasks by importance and deadline so you know what needs attention first.",
+        "tip": "Choose your three most important tasks before beginning your study session."
+    },
+    {
+        "title": "Break Large Assignments",
+        "category": "Organization",
+        "difficulty": "Medium",
+        "time": "15 minutes",
+        "description": "Divide large projects into smaller steps that can be completed over several study sessions.",
+        "tip": "Give each smaller step its own deadline."
+    },
+    {
+        "title": "Practice Questions",
+        "category": "Exam Preparation",
+        "difficulty": "Medium",
+        "time": "30 minutes",
+        "description": "Use practice questions to test your understanding and identify topics that need more review.",
+        "tip": "Review incorrect answers and find out why your first answer was wrong."
+    },
+    {
+        "title": "Exam Review Schedule",
+        "category": "Exam Preparation",
+        "difficulty": "Medium",
+        "time": "20 minutes",
+        "description": "Plan several short review sessions before an exam instead of studying everything the night before.",
+        "tip": "Begin reviewing several days before the exam when possible."
+    },
+    {
+        "title": "Teach the Topic",
+        "category": "Exam Preparation",
+        "difficulty": "Medium",
+        "time": "20 minutes",
+        "description": "Explain a topic as if you were teaching it to another student to check how well you understand it.",
+        "tip": "If you cannot explain something simply, review that part again."
+    },
+    {
+        "title": "Focused Reading",
+        "category": "Reading",
+        "difficulty": "Easy",
+        "time": "25 minutes",
+        "description": "Read a section carefully while looking for the main ideas, important details, and unfamiliar terms.",
+        "tip": "Write a short summary after finishing each section."
+    },
+    {
+        "title": "Preview Before Reading",
+        "category": "Reading",
+        "difficulty": "Easy",
+        "time": "10 minutes",
+        "description": "Preview headings, questions, images, and summaries before reading a chapter in detail.",
+        "tip": "Use the headings to predict what information you expect to learn."
+    },
+    {
+        "title": "Reading Notes",
+        "category": "Reading",
+        "difficulty": "Medium",
+        "time": "30 minutes",
+        "description": "Take short notes while reading to identify key concepts and organize important information.",
+        "tip": "Write ideas in your own words instead of copying complete sentences."
+    }
+]

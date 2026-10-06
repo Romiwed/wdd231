@@ -1,0 +1,62 @@
+/* =========================
+   PLANNER - TABLET
+   ========================= */
+
+@media screen and (min-width: 641px) {
+
+    .planner-hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .planner-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .saved-preference-section {
+        padding: 0 1.5rem 4rem;
+    }
+
+    .saved-preference-card {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 2rem;
+    }
+}
+
+
+/* =========================
+   PLANNER - DESKTOP
+   ========================= */
+
+@media screen and (min-width: 850px) {
+
+    .planner-layout {
+        grid-template-columns: 1.4fr 0.8fr;
+        align-items: start;
+    }
+
+    .planner-form-container,
+    .planner-tips {
+        padding: 2rem;
+    }
+}
+
+
+/* =========================
+   PLANNER - LARGE DESKTOP
+   ========================= */
+
+@media screen and (min-width: 1025px) {
+
+    .planner-hero {
+        padding: 5rem 2rem;
+    }
+
+    .planner-section {
+        padding: 4rem 2rem;
+    }
+
+    .saved-preference-section {
+        padding: 0 2rem 4rem;
+    }
+}

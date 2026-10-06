@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Plan Submitted | Study Smart Planner</title>
+
+    <meta name="description" content="View the study plan information submitted through Study Smart Planner.">
+    <meta name="author" content="Romina De Santis Cruz">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form-response.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/form-response.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="site-brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">📘</span>
+                <span>Study Smart Planner</span>
+            </a>
+
+            <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="main-navigation">
+                ☰
+            </button>
+
+            <nav id="main-navigation" class="main-navigation">
+                <a href="index.html">Home</a>
+                <a href="planner.html">Planner</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="response-section">
+
+            <div class="response-card">
+
+                <p class="eyebrow">
+                    STUDY PLAN CREATED
+                </p>
+
+                <h1>
+                    Your Study Plan
+                </h1>
+
+                <p>
+                    Your study session information was submitted successfully.
+                </p>
+
+                <!-- Form information appears here -->
+                <div id="form-results" class="form-results" aria-live="polite"></div>
+
+                <div class="response-actions">
+
+                    <a class="button primary-button" href="planner.html">
+                        Create Another Plan
+                    </a>
+
+                    <a class="button secondary-button" href="resources.html">
+                        Explore Resources
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <strong>
+                    Study Smart Planner
+                </strong>
+
+                <p>
+                    Helping students organize their time
+                    and study more effectively.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="planner.html">
+                    Planner
+                </a>
+
+                <a href="resources.html">
+                    Resources
+                </a>
+
+                <a href="attributions.html">
+                    Attributions
+                </a>
+
+                <a href="siteplan.html">
+                    Site Plan
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    &copy;
+                    <span id="current-year"></span>
+                    Romina De Santis Cruz
+                </p>
+
+                <p>
+                    WDD 231 Individual Project
+                </p>
+
+                <p id="last-modified"></p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
